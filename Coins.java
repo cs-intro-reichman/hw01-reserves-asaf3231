@@ -1,14 +1,15 @@
-public class addtwo {
+public class coins {
 
     public static void main(String[] args) {
-
-        int a = Integer.parseInt(args[0]);
-        int b = Integer.parseInt(args[1]);
+        int cents = Integer.parseInt(args[0]);
         
-        int i = a + b ; 
-         
-        System.out.println("%" + " " + "java AddTwo" + " " + a + " " + b );
-        System.out.println(a + " " + " + " + " " + b + " = " + " " + i );
+        int divider = cents/25 ; 
+        int modulu = cents%25 ; 
+
+        System.out.println("% java Coins " + cents );
+        System.out.println("use " + divider + " quarters and " + modulu + " cents");
+
+        
+       
     }
-    
 }

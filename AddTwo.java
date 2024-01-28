@@ -4,13 +4,13 @@
 public class AddTwo {
 	public static void main(String[] args) {
 		// Put your code here	
-        
+
         int a = Integer.parseInt(args[0]);
         int b = Integer.parseInt(args[1]);
         
         int i = a + b ; 
          
-        System.out.println("%" + " " + "java AddTwo" + " " + a + " " + b );
+        System.out.println("it%" + " " + "java AddTwo" + " " + a + " " + b );
         System.out.println(a + " " + " + " + " " + b + " = " + " " + i );
     }
     
