@@ -1,15 +1,25 @@
+/*
+ * Solves linear equations of the form a⋅x + b = c.
+ * The program gets a, b, and c as command-line arguments,
+ * computes x, and prints the result.
+ * Treats the three arguments as well as the computed value as double values
+ */
 public class LinearEq {
-    public static void main(String[] args) {
+	
+	public static void main(String[] args) {
         
-     double a =  Double.parseDouble(args[0]); 
-     double b =  Double.parseDouble(args[1]); 
-     double c =  Double.parseDouble(args[2]); 
-     double x =( c - b )/ a ; 
+        int a1 = Integer.parseInt(args[0]);
+        int b1 = Integer.parseInt(args[1]);
+        int c1 = Integer.parseInt(args[2]);
+        double a = a1; 
+        double b = b1;
+        double c = c1;       
 
-    System.out.println("% java LinearEq " + " " + a + " " + b + " " + c );
-    System.out.println(a + " * x + " + b + " = " + c ); 
-    System.out.println( " x = " + x );
-    
+        double rightEq = c - b;
 
-    }
-}
+        double res = rightEq/a;
+
+        System.out.println(a + " * x + " + b + " = " + c);
+        System.out.println("x = " + res);
+     } 
+ }
